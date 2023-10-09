@@ -1,0 +1,68 @@
+---
+import fotoPerfil from '../assets/perfil.webp';
+---
+
+<section
+  id='Inicio'
+  class='relative max-w-screen-xl m-auto flex sm:flex-row flex-col sm:justify-between gap-10 sm:px-5 sm:py-36 pb-5 px-1'
+>
+  <div
+    class='sm:w-[50%] flex justify-center flex-col gap-5 mx-auto sm:mx-0 text-center sm:text-left'
+  >
+    <div class=''>
+      <h2 class='text-4xl sm:leading-3 font-bold py-2'>
+        Hola!!!, mi nombre es &nbsp;<span class='text-Orange font-Courgette'
+          >Paul Cruz</span
+        >
+      </h2>
+      <span class='font-bold text-gray-600'>desarrollador web</span>
+    </div>
+
+    <p class='text-xl font-semibold text-gray-600 [text-wrap:balance]'>
+      Con experiencia en una variedad de tecnologías, desde HTML, CSS y
+      JavaScript hasta frameworks modernos como React y Astro, estoy preparado
+      para enfrentar cualquier desafío que se me presente.
+    </p>
+    <div
+      class='space-x-10 flex justify-between sm:justify-start px-5 items-center'
+    >
+      <button
+        class='bg-Orange transition-colors duration-500 px-5 py-2 border-2 border-Orange text-white rounded-lg font-bold tracking-widest hover:bg-black hover:border-black'
+        >Contratar</button
+      >
+      <a href='#Proyectos' class='font-bold underline'>Mis Proyectos</a>
+    </div>
+  </div>
+  <div>
+    <a target='_blank' href='https://www.tiktok.com/@duskadev'
+      ><img
+        src={fotoPerfil.src}
+        alt='Paul'
+        class='rounded-2xl object-top object-contain w-[500px]'
+      /></a
+    >
+  </div>
+
+  <a
+    href='#Proyectos'
+    class='absolute hidden sm:block bottom-0 left-[50%] animate-bounce cursor-pointer mx-[-37px]'
+  >
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      class='icon icon-tabler icon-tabler-arrow-narrow-down'
+      width='74'
+      height='74'
+      viewBox='0 0 24 24'
+      stroke-width='2'
+      stroke='currentColor'
+      fill='none'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+      <path d='M12 5l0 14'></path>
+      <path d='M16 15l-4 4'></path>
+      <path d='M8 15l4 4'></path>
+    </svg>
+  </a>
+</section>

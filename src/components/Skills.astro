@@ -1,0 +1,21 @@
+---
+import { techs } from '../utils/techs';
+---
+
+<section class='max-w-screen-xl mx-auto px-5 py-12' id='Skills'>
+  <h3 class='text-center text-3xl font-bold p-5 underline uppercase'>Skills</h3>
+
+  <div
+    class='grid grid-cols-[repeat(auto-fit,minmax(min(150px,100%),1fr))] place-items-center gap-5'
+  >
+    {
+      techs.map((tech) => (
+        <img
+          src={tech.img.src}
+          alt={tech.name}
+          class='h-32 w-[150px] object-contain'
+        />
+      ))
+    }
+  </div>
+</section>
